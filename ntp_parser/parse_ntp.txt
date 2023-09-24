@@ -1,0 +1,47 @@
+NtpV4Packet {
+    li: 0,
+    version: 4,
+    mode: NtpMode(
+        3,
+    ),
+    stratum: 0,
+    poll: 0,
+    precision: 0,
+    root_delay: 12,
+    root_dispersion: 0,
+    ref_id: 0,
+    ts_ref: 0,
+    ts_orig: 0,
+    ts_recv: 0,
+    ts_xmit: 14710388140573593600,
+    extensions: [
+        NtpExtension {
+            field_type: 0,
+            length: 0,
+            value: [],
+        },
+    ],
+    auth: Some(
+        NtpMac {
+            key_id: 1,
+            mac: [
+                82,
+                128,
+                12,
+                43,
+                89,
+                0,
+                100,
+                102,
+                132,
+                244,
+                76,
+                164,
+                238,
+                206,
+                18,
+                184,
+            ],
+        },
+    ),
+}

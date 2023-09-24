@@ -1,0 +1,38 @@
+SnmpMessage {
+    version: 0,
+    community: "public",
+    pdu: TrapV1(
+        SnmpTrapPdu {
+            enterprise: OID(1.3.6.1.4.1.4.1.2.21),
+            agent_addr: IPv4(
+                127.0.0.1,
+            ),
+            generic_trap: coldStart,
+            specific_trap: 0,
+            timestamp: 0,
+            var: [
+                SnmpVariable {
+                    oid: OID(1.3.6.1.2.1.2.1.0),
+                    val: Number(
+                        BerObject {
+                            header: BerObjectHeader {
+                                class: Universal,
+                                structured: 0,
+                                tag: Integer,
+                                len: Definite(
+                                    0,
+                                ),
+                                raw_tag: None,
+                            },
+                            content: Integer(
+                                [
+                                    33,
+                                ],
+                            ),
+                        },
+                    ),
+                },
+            ],
+        },
+    ),
+}

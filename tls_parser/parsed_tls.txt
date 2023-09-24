@@ -1,0 +1,58 @@
+TlsPlaintext {
+    hdr: TlsRecordHeader {
+        type: Handshake,
+        version: Tls10,
+        len: 512,
+    },
+    msg: [
+        Handshake(
+            ClientHello(
+                TlsClientHelloContents {
+                    version: Tls12,
+                    rand_time: 3456487331,
+                    rand_data: [d9 21 70 cb c2 46 5c dc 3e 3a 2f 57 7f 6e ac 80 93 61 70 8a b2 44 b0 7d 8f ad 86 16],
+                    session_id: None,
+                    ciphers: [
+                        0x1301(TLS_AES_128_GCM_SHA256),
+                        0x1303(TLS_CHACHA20_POLY1305_SHA256),
+                        0x1302(TLS_AES_256_GCM_SHA384),
+                        0xc02b(TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256),
+                        0xc02f(TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256),
+                        0xcca9(TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256),
+                        0xcca8(TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256),
+                        0xc00a(TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA),
+                        0xc009(TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA),
+                        0xc013(TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA),
+                        0xc023(TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256),
+                        0xc027(TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256),
+                        0xc014(TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA),
+                        0x009e(TLS_DHE_RSA_WITH_AES_128_GCM_SHA256),
+                        0xccaa(TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256),
+                        0x0033(TLS_DHE_RSA_WITH_AES_128_CBC_SHA),
+                        0x0032(TLS_DHE_DSS_WITH_AES_128_CBC_SHA),
+                        0x0067(TLS_DHE_RSA_WITH_AES_128_CBC_SHA256),
+                        0x0039(TLS_DHE_RSA_WITH_AES_256_CBC_SHA),
+                        0x0038(TLS_DHE_DSS_WITH_AES_256_CBC_SHA),
+                        0x006b(TLS_DHE_RSA_WITH_AES_256_CBC_SHA256),
+                        0x0016(TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA),
+                        0x0013(TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA),
+                        0x009c(TLS_RSA_WITH_AES_128_GCM_SHA256),
+                        0x002f(TLS_RSA_WITH_AES_128_CBC_SHA),
+                        0x003c(TLS_RSA_WITH_AES_128_CBC_SHA256),
+                        0x0035(TLS_RSA_WITH_AES_256_CBC_SHA),
+                        0x003d(TLS_RSA_WITH_AES_256_CBC_SHA256),
+                        0x000a(TLS_RSA_WITH_3DES_EDE_CBC_SHA),
+                        0x0005(TLS_RSA_WITH_RC4_128_SHA),
+                        0x0004(TLS_RSA_WITH_RC4_128_MD5),
+                    ],
+                    comp: [
+                        Null,
+                    ],
+                    ext: Some(
+                        [00 15 00 fc 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0b 00 09 00 00 06 73 65 72 76 65 72 ff 01 00 01 00 00 0a 00 14 00 12 00 1d 00 17 00 18 00 19 01 00 01 01 01 02 01 03 01 04 00 0b 00 02 01 00 00 23 00 00 00 28 00 26 00 24 00 1d 00 20 2a 98 1d b6 cd d0 2a 06 c1 76 31 02 c9 e7 41 36 5a c4 e6 f7 2b 31 76 a6 bd 6a 35 23 d3 ec 0f 4c 00 2b 00 07 06 7f 12 03 03 03 02 00 0d 00 20 00 1e 04 03 05 03 06 03 02 03 08 04 08 05 08 06 04 01 05 01 06 01 02 01 04 02 05 02 06 02 02 02 00 2d 00 02 01 01],
+                    ),
+                },
+            ),
+        ),
+    ],
+}
